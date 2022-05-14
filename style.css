@@ -1,9 +1,5 @@
-h1 {
-  color:black;
-}
-
-p {
-  color: black;
+body {
+  font-family: arial, verdana, helvetica, sans-serif;
 }
 
 img#lens {
@@ -11,7 +7,7 @@ img#lens {
 }
 
 img#irises {
-  max-width: 100%;
+  max-width: 80%;
 }
 
 table, th, td {
@@ -20,7 +16,7 @@ table, th, td {
 }
 
 table.asset-tables {
-  width: 100%; 
+  width: 80%; 
 }
 
 table.asset-tables img {
