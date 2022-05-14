@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
 
 <head>
@@ -6,30 +8,123 @@
 </head>
 
 <body>
+  <article>
   <h1>Aperture Settings</h1>
-  <h2>Improving your photography by controlling aperture.</h2>
+  <p>Improving your photography by controlling aperture.</p>
 
   <p>Cameras with interchangeable lenses offer three primary settings that affect how a photograph is exposed when the shutter button is pressed. These are aperture, shutter speed, and sensitivity (also called “ISO”) and are often referred to collectively as the “exposure triangle.” Each setting impacts the brightness of a photograph while also providing its own unique impact. This guide will focus on aperture.</p>
 
-  <img src="static/camera lens with iris.jpg"
-  id="lens"
-  alt="camera lens with iris">
+  <img
+    src="static/camera lens with iris.jpg"
+    id="lens"
+    alt="A close up of a camera lens, with a focus on the iris."
+  >
 
-  <table>
-    <tr>
-      <th>dog name</th>
-      <th>dog size</th>
-    </tr>
-    <tr>
-      <td>teeners</td>
-      <td>small</td>
-    </tr>
-    <tr>
-      <td>bigpup</td>
-      <td>big</td>
-    </tr>
+  <p><i>Figure ?: A camera lens with the iris and aperture visible in the center.</i></p>
 
+  <p>The aperture setting, called an f-number, is usually expressed like this: &fnof;/11. The f-number is what fraction of the focal length the aperture diameter represents. A &fnof;/2 aperture has a diameter equal to &frac12; of the focal length, and a &fnof;/8 aperture has a diameter equal to &frac18; of the focal length. So as the aperture diameter decreases, the f-number increases.</p>
+
+  <p>F-numbers are not a continuous linear scale. The standard sequence of f-numbers is &fnof;/1, &fnof;/1.4, &fnof;/2, &fnof;/2.8, &fnof;/4, &fnof;/5.6, &fnof;/8, &fnof;/11, &fnof;/16, and &fnof;/22; but note that some lenses have numbers between these. These ratios have a specific mathematical relationship to each other in terms of how much light passes through the aperture. Each number in the standard sequence lets in half the light of the previous number, so an aperture set to &fnof;/2.8 will let in twice as much light as it would when set at &fnof;/4. A smaller f-number indicates a larger aperture which lets in more light, while a larger F-number indicates a smaller aperture, which lets in less light.</p>
+
+  <p>Since a smaller aperture lets in less light, it will result in a darker photograph. What is not as  obvious is that a smaller aperture also causes more of your photograph to be in focus. In landscape photographs, objects far away from the camera are in focus, while in portrait photographs, it is common to see distant objects behind the subject that are out of focus. This difference is an effect of different aperture sizes. The range of distances that are in focus are referred to as the depth of field.</p>
+
+  <img
+    src="static/F-number chart.png"
+    id="irises"
+    alt="A line art diagram showing the relationship between the size of the aperture, the f-number, and the effect on a photograph."
+  >
+
+  <p><i>Figure ?: As the size of the aperture decreases, the f-number increases. More of the photograph is in focus at smaller apertures, but the photograph is darker overall.</i></p>
+
+  <h1>Aperature in action</h1>
+
+  <p>Most cameras have two primary modes that allow the aperture to be set: aperture priority and manual mode. In aperture priority mode, you control the aperture, and the camera calculates an optimal shutter speed and sensitivity (also called ISO) setting. In manual mode, you control all of the exposure settings, and changing aperture does not automatically change the other settings.</p>
+
+  <h2><i>Aperture priority</i></h2>
+
+  <p>In the images below, the aperture was set differently for each photograph. The camera then selected a shutter speed and sensitivity (ISO). Note how the background becomes more in focus as the f-number is increased.</p>
+
+  <table class="asset-tables">
+    <thead>
+      <tr>
+        <th>Filename</th>
+        <th>f-Number</th>
+        <th>Shutter Speed</th>
+        <th>Sensitivity (ISO)</th>
+        <th>Iris graphic</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <img src="static/Av f-2.8.jpg"
+          alt="Photograph taken in aperture priority mode with f-number 2.8. Shutter speed and sensitivity set by camera to 1/800 second and 200, respectively.">
+        </td>
+        <td>&fnof;/2.8</td>
+        <td>1/800</td>
+        <td>200</td>
+        <td>
+          <img src="static/camera iris 04.png"
+          alt="Graphic showing camera iris 04.">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="static/Av f-5.6.jpg"
+          alt="Photograph taken in aperture priority mode with f-number 5.6. Shutter speed and sensitivity set by camera to 1/125 second and 200, respectively.">
+        </td>
+        <td>&fnof;/5.6</td>
+        <td>1/125</td>
+        <td>200</td>
+        <td>
+          <img src="static/camera iris 06.png"
+          alt="Graphic showing camera iris 06.">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="static/Av f-11.jpg"
+          alt="Photograph taken in aperture priority mode with f-number 11. Shutter speed and sensitivity set by camera to 1/80 second and 400, respectively.">
+        </td>
+        <td>&fnof;/11</td>
+        <td>1/80</td>
+        <td>400</td>
+        <td>
+          <img src="static/camera iris 08.png"
+          alt="Graphic showing camera iris 08.">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="static/Av f-16.jpg"
+          alt="Photograph taken in aperture priority mode with f-number 16. Shutter speed and sensitivity set by camera to 1/80 second and 800, respectively.">
+        </td>
+        <td>&fnof;/16</td>
+        <td>1/80</td>
+        <td>800</td>
+        <td>
+          <img src="static/camera iris 09.png"
+          alt="Graphic showing camera iris 09.">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="static/Av f-22.jpg"
+          alt="Photograph taken in aperture priority mode with f-number 22. Shutter speed and sensitivity set by camera to 1/80 second and 1600, respectively.">
+        </td>
+        <td>&fnof;/22</td>
+        <td>1/80</td>
+        <td>1600</td>
+        <td>
+          <img src="static/camera iris 10.png"
+          alt="Graphic showing camera iris 10.">
+        </td>
+      </tr>
+    </tbody>
   </table>
+
+
+</article>
 </body>
 
 </html>

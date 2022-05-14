@@ -2,15 +2,27 @@ h1 {
   color:black;
 }
 
-h2 {
-  color: gray;
-  font-style: italic;
-}
-
 p {
   color: black;
 }
 
 img#lens {
   width: 200px;
+}
+
+img#irises {
+  max-width: 100%;
+}
+
+table, th, td {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+table.asset-tables {
+  width: 100%; 
+}
+
+table.asset-tables img {
+  max-height: 200px;
 }
