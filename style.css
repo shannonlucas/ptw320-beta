@@ -8,7 +8,7 @@ article {
 }
 
 h1, h2 {
-  margin-top: -50px;
+  margin-top: -20px;
   padding-top: 50px;
 }
 
@@ -25,6 +25,7 @@ ul {
 
 li {
   float: left;
+  border-right: 1px solid #bbb;
 }
 
 li a {
