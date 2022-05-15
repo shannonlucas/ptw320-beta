@@ -51,11 +51,16 @@ li a:hover:not(.active) {
 }
 
 img#lens {
-  max-width: 30%;
+  max-width: 250px;
+  margin: 0 auto;
+  display: block;
 }
 
 img#irises {
-  max-width: 80%;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: block;
 }
 
 img {
@@ -67,10 +72,11 @@ img {
 table, th, td {
   border: 2px solid;
   border-collapse: collapse;
+  padding: 0px 10px;
 }
 
 table.asset-tables {
-  width: 80%; 
+  width: 100%; 
 }
 
 table.asset-tables img {
