@@ -84,7 +84,7 @@ figcaption {
 
 img#irises {
   margin: 0 auto;
-  width: 100%;
+  width: 75vw;
 }
 
 img {
@@ -96,21 +96,44 @@ img {
   max-height: max-content;
 }
 
+img[src$=".svg"] {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .photo {
   border: 1px solid #333;
   padding: 5px;
 }
 
 table, th, td {
-  border: 2px solid;
+  border: 1px solid;
   border-collapse: collapse;
-  padding: 0px 10px;
 }
 
-table.asset-tables {
-  width: 100%; 
+.photo-table {
+  margin: 2em auto 3em auto;
 }
 
-table.asset-tables img {
-  max-height: 200px;
+.photo-table thead tr th {
+  background-color: #333;
+  border-color: #333;
+  color: white;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
+.photo-table tbody tr td {
+  border-color: #bbb;
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
+.photo-table tbody tr.odd td {
+  background-color: white;
+}
+
+.photo-table tbody tr.even td {
+  background-color: #eee;
 }

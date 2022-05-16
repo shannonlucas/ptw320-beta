@@ -3,8 +3,10 @@
 <html>
 
 <head>
-  <title>Project Beta</title>
+  <title>Aperture Settings</title>
   <link rel="stylesheet" href="style.css">
+  <meta name="keywords" content="photography, aperture, camera settings, f-number, f-stop">
+  <meta name="description" content="A quick guide describing how a camera's aperture setting affects the photographs it takes.">
 </head>
 
 <body>
@@ -32,17 +34,17 @@
     </figcaption>
   </figure>
 
-  <p>Cameras with interchangeable lenses offer three primary settings that affect how a photograph is exposed when the shutter button is pressed. These are aperture, shutter speed, and sensitivity (also called “ISO”) and are often referred to collectively as the “exposure triangle.” Each setting impacts the brightness of a photograph while also providing its own unique impact. This guide will focus on aperture.</p>
+  <p>Cameras with interchangeable lenses offer three primary settings that affect how a photograph is exposed when the shutter button is pressed. These are aperture, shutter speed, and sensitivity (also called &ldquo;ISO&rdquo;) and are often referred to collectively as the &ldquo;exposure triangle.&rdquo; Each setting impacts the brightness of a photograph while also providing its own unique impact. This guide will focus on aperture.</p>
 
   <p>The aperture setting, called an f-number, is usually expressed like this: &fnof;/11. The f-number is what fraction of the focal length the aperture diameter represents. A &fnof;/2 aperture has a diameter equal to &frac12; of the focal length, and a &fnof;/8 aperture has a diameter equal to &frac18; of the focal length. So as the aperture diameter decreases, the f-number increases.</p>
 
-  <p>F-numbers are not a continuous linear scale. The standard sequence of f-numbers is &fnof;/1, &fnof;/1.4, &fnof;/2, &fnof;/2.8, &fnof;/4, &fnof;/5.6, &fnof;/8, &fnof;/11, &fnof;/16, and &fnof;/22; but note that some lenses have numbers between these. These ratios have a specific mathematical relationship to each other in terms of how much light passes through the aperture. Each number in the standard sequence lets in half the light of the previous number, so an aperture set to &fnof;/2.8 will let in twice as much light as it would when set at &fnof;/4. A smaller f-number indicates a larger aperture which lets in more light, while a larger F-number indicates a smaller aperture, which lets in less light.</p>
+  <p>F-numbers are not a continuous linear scale. The standard sequence of f-numbers is &fnof;/1, &fnof;/1.4, &fnof;/2, &fnof;/2.8, &fnof;/4, &fnof;/5.6, &fnof;/8, &fnof;/11, &fnof;/16, and &fnof;/22; but note that some lenses have numbers between these. These ratios have a specific mathematical relationship to each other in terms of how much light passes through the aperture. Each number in the standard sequence lets in half the light of the previous number, so an aperture set to &fnof;/2.8 will let in twice as much light as it would when set at &fnof;/4. A smaller f-number indicates a larger aperture which lets in more light, while a larger f-number indicates a smaller aperture, which lets in less light.</p>
 
-  <p>Since a smaller aperture lets in less light, it will result in a darker photograph. What is not as  obvious is that a smaller aperture also causes more of your photograph to be in focus. In landscape photographs, objects far away from the camera are in focus, while in portrait photographs, it is common to see distant objects behind the subject that are out of focus. This difference is an effect of different aperture sizes. The range of distances that are in focus are referred to as the depth of field.</p>
+  <p>Since a smaller aperture lets in less light, it will result in a darker photograph. What is not as obvious is that a smaller aperture also causes more of your photograph to be in focus. In landscape photographs, objects far away from the camera are in focus, while in portrait photographs, it is common to see distant objects behind the subject that are out of focus. This difference is an effect of different aperture sizes. The range of distances that are in focus are referred to as the depth of field.</p>
 
   <figure id="figure-2" class="centered">
     <img
-      src="static/f-number-chart.png"
+      src="static/f-number-chart.svg"
       id="irises"
       alt="A line art diagram showing the relationship between the size of the aperture, the f-number, and the effect on a photograph."
     >
@@ -55,181 +57,133 @@
 
   <h1 id="action">Aperture in action</h1>
 
-  <p>Most cameras have two primary modes that allow the aperture to be set: aperture priority and manual mode. In aperture priority mode, you control the aperture, and the camera calculates an optimal shutter speed and sensitivity (also called ISO) setting. In manual mode, you control all of the exposure settings, and changing aperture does not automatically change the other settings.</p>
+  <p>Most cameras have two primary modes that allow the aperture to be set: aperture priority and manual mode. In aperture priority mode, you control the aperture, and the camera calculates an optimal shutter speed and sensitivity (also called &ldquo;ISO&rdquo;) setting. In manual mode, you control all the exposure settings, and changing aperture does not automatically change the other settings.</p>
 
-  <p>In the photographs below, there are seven colored objects lined up in a row. In each photograph, the white object is the one that the camera was focused on.</p>
+  <p>In the photographs below, there are seven colored objects lined up in a row with equal spacing. The white object in the center of the row is what the camera was focused on.</p>
 
   <h2 id="priority"><i>Aperture priority</i></h2>
 
-  <p>In the images below, the aperture was set differently for each photograph. The camera then selected a shutter speed and sensitivity (ISO). Note how the background becomes more in focus as the f-number is increased.</p>
+  <p>In the images below, the aperture was set differently for each photograph. Then the camera automatically selected a shutter speed and sensitivity (ISO). Note how the background becomes more in focus as the f-number is increased.</p>
 
-  <table class="asset-tables">
+  <table class="photo-table">
     <thead>
       <tr>
-        <th>Filename</th>
-        <th>f-Number</th>
-        <th>Shutter Speed</th>
+        <th>Photograph</th>
+        <th>Aperture</th>
+        <th>Shutter speed</th>
         <th>Sensitivity (ISO)</th>
-        <th>Iris graphic</th>
       </tr>
     </thead>
     <tbody>
-      <tr> 
+      <tr class="odd">
         <td>
-          <img src="static/av-mode/av-f2_8.jpg"
+          <img src="static/av-mode/av-f2_8-300.jpg" class="photo"
           alt="Photograph taken in aperture priority mode with f-number 2.8. Shutter speed and sensitivity set by camera to 1/800 second and 200, respectively.">
         </td>
         <td>&fnof;/2.8</td>
         <td>1/800</td>
         <td>200</td>
-        <td>
-          <img src="static/camera-irises/iris-04.png"
-          alt="Graphic showing camera iris 04.">
-        </td>
       </tr>
-      <tr>
+      <tr class="even">
         <td>
-          <img src="static/av-mode/av-f5_6.jpg"
+          <img src="static/av-mode/av-f5_6-300.jpg" class="photo"
           alt="Photograph taken in aperture priority mode with f-number 5.6. Shutter speed and sensitivity set by camera to 1/125 second and 200, respectively.">
         </td>
         <td>&fnof;/5.6</td>
         <td>1/125</td>
         <td>200</td>
-        <td>
-          <img src="static/camera-irises/iris-06.png"
-          alt="Graphic showing camera iris 06.">
-        </td>
       </tr>
-      <tr>
+      <tr class="odd">
         <td>
-          <img src="static/av-mode/av-f11.jpg"
+          <img src="static/av-mode/av-f11-300.jpg" class="photo"
           alt="Photograph taken in aperture priority mode with f-number 11. Shutter speed and sensitivity set by camera to 1/80 second and 400, respectively.">
         </td>
         <td>&fnof;/11</td>
         <td>1/80</td>
         <td>400</td>
-        <td>
-          <img src="static/camera-irises/iris-08.png"
-          alt="Graphic showing camera iris 08.">
-        </td>
       </tr>
-      <tr>
+      <tr class="even">
         <td>
-          <img src="static/av-mode/av-f16.jpg"
+          <img src="static/av-mode/av-f16-300.jpg" class="photo"
           alt="Photograph taken in aperture priority mode with f-number 16. Shutter speed and sensitivity set by camera to 1/80 second and 800, respectively.">
         </td>
         <td>&fnof;/16</td>
         <td>1/80</td>
         <td>800</td>
-        <td>
-          <img src="static/camera-irises/iris-09.png"
-          alt="Graphic showing camera iris 09.">
-        </td>
       </tr>
-      <tr>
+      <tr class="odd">
         <td>
-          <img src="static/av-mode/av-f22.jpg"
+          <img src="static/av-mode/av-f22-300.jpg" class="photo"
           alt="Photograph taken in aperture priority mode with f-number 22. Shutter speed and sensitivity set by camera to 1/80 second and 1600, respectively.">
         </td>
         <td>&fnof;/22</td>
         <td>1/80</td>
         <td>1600</td>
-        <td>
-          <img src="static/camera-irises/iris-10.png"
-          alt="Graphic showing camera iris 10.">
-        </td>
       </tr>
     </tbody>
   </table>
-
-  <br>
-  <br>
 
   <h2 id="manual"><i>Manual mode</i></h2>
 
   <p>In manual mode, it becomes more apparent that less light is reaching the camera sensor as the f-number increases. The photographs below use the same apertures as the images above, but the photographer has set the shutter speed to 1/30 second and the sensitivity to 100 for each photograph.</p>
 
-  <table class="asset-tables">
+  <table class="photo-table">
     <thead>
       <tr>
-        <th>Filename</th>
-        <th>f-Number</th>
-        <th>Shutter Speed</th>
+        <th>Sample photograph</th>
+        <th>Aperture</th>
+        <th>Shutter speed</th>
         <th>Sensitivity (ISO)</th>
-        <th>Iris graphic</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr class="odd">
         <td>
-          <img src="static/m-mode/m-f2_8.jpg"
+          <img src="static/m-mode/m-f2_8-300.jpg" class="photo"
           alt="Photograph taken in manual mode with f-number 2.8, shutter speed 1/30 second and sensitivity 100.">
         </td>
         <td>&fnof;/2.8</td>
         <td>1/30</td>
         <td>100</td>
-        <td>
-          <img src="static/camera-irises/iris-04.png"
-          alt="Graphic showing camera iris 04.">
-        </td>
       </tr>
-      <tr>
+      <tr class="even">
         <td>
-          <img src="static/m-mode/m-f5_6.jpg"
+          <img src="static/m-mode/m-f5_6-300.jpg" class="photo"
           alt="Photograph taken in manual mode with f-number 5.6, shutter speed 1/30 second and sensitivity 100.">
         </td>
         <td>&fnof;/5.6</td>
         <td>1/30</td>
         <td>100</td>
-        <td>
-          <img src="static/camera-irises/iris-06.png"
-          alt="Graphic showing camera iris 06.">
-        </td>
       </tr>
-      <tr>
+      <tr class="odd">
         <td>
-          <img src="static/m-mode/m-f11.jpg"
+          <img src="static/m-mode/m-f11-300.jpg" class="photo"
           alt="Photograph taken in manual mode with f-number 11, shutter speed 1/30 second and sensitivity 100.">
         </td>
         <td>&fnof;/11</td>
         <td>1/30</td>
         <td>100</td>
-        <td>
-          <img src="static/camera-irises/iris-08.png"
-          alt="Graphic showing camera iris 08.">
-        </td>
       </tr>
-      <tr>
+      <tr class="even">
         <td>
-          <img src="static/m-mode/m-f16.jpg"
+          <img src="static/m-mode/m-f16-300.jpg" class="photo"
           alt="Photograph taken in manual mode with f-number 16, shutter speed 1/30 second and sensitivity 100.">
         </td>
         <td>&fnof;/16</td>
         <td>1/30</td>
         <td>100</td>
-        <td>
-          <img src="static/camera-irises/iris-09.png"
-          alt="Graphic showing camera iris 09.">
-        </td>
       </tr>
-      <tr>
+      <tr class="odd">
         <td>
-          <img src="static/m-mode/m-f22.jpg"
+          <img src="static/m-mode/m-f22-300.jpg" class="photo"
           alt="Photograph taken in manual mode with f-number 22, shutter speed 1/30 second and sensitivity 100.">
         </td>
         <td>&fnof;/22</td>
         <td>1/30</td>
         <td>100</td>
-        <td>
-          <img src="static/camera-irises/iris-10.png"
-          alt="Graphic showing camera iris 10.">
-        </td>
       </tr>
     </tbody>
   </table>
-
-  <br>
-  <br>
 
   <hr>
 
@@ -237,7 +191,7 @@
 
   <p>Aperture is one of the key camera settings that affects your photography. As the aperture decreases, the amount of light reaching the camera sensor decreases, so your photo will be darker, but more of your subject will be in focus.</p>
 
-  <p>An f-number is the ratio of lens’ focal length to the diameter of the aperture. A larger f-number means a smaller aperture. The standard sequence of f-numbers is &fnof;/1, &fnof;/1.4, &fnof;/2, &fnof;/2.8, &fnof;/4, &fnof;/5.6, &fnof;/8, &fnof;/11, &fnof;/16, and &fnof;/22. Each progressively larger f-number in the standard sequence lets in half as much light as the previous one.</p>
+  <p>An f-number is the ratio of lens&rsquo; focal length to the diameter of the aperture. A larger f-number means a smaller aperture. The standard sequence of f-numbers is &fnof;/1, &fnof;/1.4, &fnof;/2, &fnof;/2.8, &fnof;/4, &fnof;/5.6, &fnof;/8, &fnof;/11, &fnof;/16, and &fnof;/22. Each progressively larger f-number in the standard sequence lets in half as much light as the previous one.</p>
 
   <p>The two most common camera modes for aperture control are aperture priority and manual mode. In aperture priority, you set the f-number, and the camera calculates an optimal shutter speed and sensitivity. In manual mode, you control shutter speed and sensitivity in addition to aperture.</p>
 
