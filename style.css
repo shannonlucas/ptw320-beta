@@ -1,53 +1,90 @@
+html {
+  scroll-padding-top: 4rem;
+  font-size: 16px;
+}
+
 body {
-  font-family: arial, verdana, helvetica, sans-serif;
+  font-family: Lato, "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+  line-height: 1.25rem;
+  min-width: 800px;
 }
 
-article {
+h1, h2, h3 { 
+  font-family: Arvo, Georgia, Cambria, "Times New Roman", Times, serif;
+  margin-top: 0; 
+  margin-bottom: 0;
+  padding: 1.25rem 0 0.5rem 0;
+}
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-style: italic;
+}
+
+.top-link {
+  font-weight: bold;
+}
+
+.top-link::after {
+  content: " \2191";
+}
+
+main {
   padding: 15px 15px 10px 15px;
-  margin-top: 40px;
+  margin-top: 4rem;
+  padding: 0 2rem 4rem 2rem;
 }
 
-h1, h2 {
-  margin-top: -20px;
-  padding-top: 50px;
+section {
+  margin-bottom: 2rem;
 }
 
-.subheader {
+.subtitle {
   font-size: 20px;
   color: #888;
   font-style: italic;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+#page-nav {
+  background-color: #333;
+  width: 100%;
+  min-width: inherit;
   background-color: #333;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  padding: 0 2rem;
 }
 
-li {
+#page-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#page-nav ul li {
   float: left;
   border-right: 1px solid #bbb;
 }
 
-li a {
+#page-nav ul li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 1rem;
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
+#page-nav ul li a:hover {
   background-color: #111;
-}
-
-.active {
-  background-color: #04AA6D;
+  color: #04AA6D;
 }
 
 figure {
@@ -85,6 +122,7 @@ figcaption {
 img#irises {
   margin: 0 auto;
   width: 75vw;
+  min-width: 600px;
 }
 
 img {
