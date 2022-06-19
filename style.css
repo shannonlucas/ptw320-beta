@@ -43,6 +43,11 @@ mark {
   font-weight: bold;
 }
 
+main, nav ul {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 main {
   padding: 15px 15px 10px 15px;
   margin-top: 4rem;
@@ -67,12 +72,12 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 0 2rem;
+  padding: 0;
 }
 
 #page-nav ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
